@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+    <section id="expenses">
+        <h1>Log Your Salary & Expenses</h1>
+        <label>Monthly Salary: $ <input type="number" id="salary" placeholder="e.g., 120000" step="0.01"></label>
+        <h2>Expenses:</h2>
+        <label>Electric Bill: $ <input type="number" id="electric" placeholder="0" step="0.01"></label>
+        <label>Rent: $ <input type="number" id="rent" placeholder="0" step="0.01"></label>
+        <label>Philanthropy: $ <input type="number" id="tithe" placeholder="0" step="0.01"></label>
+        <label>Fees: $ <input type="number" id="fees" placeholder="0" step="0.01"></label>
+        <label>Entertainment: $ <input type="number" id="enta" placeholder="0" step="0.01"></label>
+        <label>Shopping: $ <input type="number" id="shopping" placeholder="0" step="0.01"></label>
+        <label>Savings: $ <input type="number" id="save" placeholder="0" step="0.01"></label>
+        <button onclick="handleCalculation()">Calculate Remaining Salary</button>
+    </section>
+
+
+    <!-- <section id="result">
+        <h3>Remaining Salary After Expenses</h3>
+        <div id="remaining">$0.00</div>
+    </section> -->
+
+    <section class="right-section">
+        <h3>Breakdown</h3>
+        <div class="expense-list">
+            <h4>Expenses Summary</h4>
+            <div id="expenses-display">Enter Values and calculate to see your expenses here</div>
+        </div>
+        <div class="salary-steps">
+            <h4>Salary After Each Expense</h4>
+            <div id="salary-steps-display">Enter values and calculate to see deductions here</div>
+            <div id="remaining" class="remaining">Ksh 0.00</div>
+        </div>
+    </section>
+    </div>
+    
+
+
+
+    <script src="/javascript/main.js"></script>
+</body>
+</html>
